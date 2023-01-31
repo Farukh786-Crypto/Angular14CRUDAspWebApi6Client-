@@ -1,0 +1,122 @@
+<nav class="navbar navbar-light bg-white  navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src=" https://dummyimage.com/102x30/007bff/ffffff?text=logo" height="30" alt="image">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"
+            aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="create-employee">Create Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="cascade-dropdown">Cascading Dropdown</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav justify-content-end d-none d-lg-flex ms-md-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-slack"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-dark ms-md-3" href="#">Button</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
+<section class="pt-5 pb-5 pro"><span id="" class="left arrowBtns uk-button uk-button-default"><span><svg width="20"
+                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" stroke="#000" stroke-width="1.03" points="4 13 10 7 16 13"></polyline>
+            </svg></span></span><span id="" class="right arrowBtns uk-button uk-button-default"><span><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" ratio="1">
+                <polyline fill="none" stroke="#000" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+            </svg></span></span><span class="--app-removeBlockBtn uk-button uk-button-default" style=""><span
+            style=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" ratio="1">
+                <polyline fill="none" stroke="#000" points="6.5 3 6.5 1.5 13.5 1.5 13.5 3"></polyline>
+                <polyline fill="none" stroke="#000" points="4.5 4 4.5 18.5 15.5 18.5 15.5 4"></polyline>
+                <rect x="8" y="7" width="1" height="9"></rect>
+                <rect x="11" y="7" width="1" height="9"></rect>
+                <rect x="2" y="3" width="16" height="1"></rect>
+            </svg></span></span>
+    <div class="container">
+        <div class="row d-flex  justify-content-between align-items-center">
+            <div class="col-md-3 d-md-flex flex-column align-content-center">
+                <h2 class="mb-2 mt-5 fw-bold">List with image, and form</h2>
+                <p class=" ">Here are some of our top features.</p>
+                <ul class="list-features  ">
+                    <li>One year of free updates</li>
+                    <li>Premium support</li>
+                    <li>User friendly and intuitive</li>
+                    <li>Media browser soon</li>
+                    <li>Bootstrap 5 support</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src=" https://dummyimage.com/550x500/5fa9f8/fff" alt="" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg text-start h-100">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputName1">Your name</label>
+                                <input type="text" class="form-control mt-2" id="exampleInputName1" placeholder="Name">
+                            </div>
+                            <div class="form-group  mt-2">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control  mt-2" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We will
+                                    never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group  mt-2">
+                                <label for="exampleSelect1">Example select</label>
+                                <select class="form-control  mt-2" id="exampleSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <fieldset class="form-group d-flex">
+                                <div class="form-check w-50 pull-left pre-0 me-0 mb-2">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input mt-0" name="optionsRadios"
+                                            id="optionsRadios1" value="option1" checked=""> Option one
+                                    </label>
+                                </div>
+                                <div class="form-check w-50 pull-right pe-0 me-0">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input mt-0" name="optionsRadios"
+                                            id="optionsRadios2" value="option2"> Option two
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn w-100 btn-lg mt-3 btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="addBlockBtnCont" style="" class="uk-button uk-button-default"><span uk-icon="icon: plus"
+            class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                data-svg="plus">
+                <rect x="9" y="1" width="1" height="17"></rect>
+                <rect x="1" y="9" width="17" height="1"></rect>
+            </svg></span></button>
+</section>

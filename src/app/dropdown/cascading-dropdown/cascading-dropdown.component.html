@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header">
+            <div class="card-body text-primary">
+                <form>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select class="form-control" (change)="getAllStateByIdForm($event)">
+                            <option>select Country</option>
+                            <option [value]="country.countryId" *ngFor="let country of countryList">
+                                {{country.countryName}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <select class="form-control" (change)="getAllCityByStateIdForm($event)">
+                            <option> Select State </option>
+                            <option [value]="state.stateId" *ngFor="let state of stateList">
+                                {{state.stateName}}
+                            </option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <select class="form-control">
+                            <option>Select city</option>
+                            <option [value]="city.cityId" *ngFor="let city of cityList">{{city.cityName}}</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
